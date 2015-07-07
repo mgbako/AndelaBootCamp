@@ -7,7 +7,7 @@ url3 = "http://www.bbc.com"
 
 lists = [ [url1, 10], [url2, 20], [url3, 30] ]
 
+c = 0
 for l in lists :
-	for t in l :
-		webbrowser.open()
-		time.sleep()
+	webbrowser.open(l[0])
+	time.sleep(l[1])
